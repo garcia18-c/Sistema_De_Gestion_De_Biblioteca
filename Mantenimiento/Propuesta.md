@@ -1,12 +1,28 @@
-# Propuesta de Mantenimiento para Sistema de Gestión de Biblioteca
+# 1. Tipo de Mantenimiento Propuesto
+**Correctivo y Preventivo**
 
-## 1. Tipo de Mantenimiento Propuesto
-**Correctivo y Preventivo**.
+---
 
-## 2. Justificación
-* **Correctivo:** Se requiere corregir el **defecto lógico** principal: la posibilidad de registrar un préstamo (RF2) de un libro cuyo estado ya es "prestado", causando inconsistencia en la base de datos.
-* **Preventivo:** Se necesita fortalecer el módulo de devolución (RF3) para **garantizar** que el estado del libro cambie siempre de forma correcta y confiable a "disponible".
+# 2. Justificación
 
-## 3. Tareas Clave
-1. **Validación Correctiva:** Implementar una **validación estricta** antes de registrar un préstamo (RF2) que rechace la solicitud si el libro no está en estado "disponible".
-2. **Fortalecimiento Preventivo:** Revisar la función de devolución (RF3) para asegurar la **actualización confiable** del estado del libro a "disponible".
+## Mantenimiento Correctivo
+Se debe corregir una falla lógica en el proceso de gestión de préstamos (**RF2**). Actualmente, el sistema permite registrar un préstamo incluso cuando el libro ya está en estado **"prestado"**, generando inconsistencias en la base de datos y riesgos operativos.
+
+## Mantenimiento Preventivo
+Para mejorar la estabilidad del sistema y evitar futuros errores, es necesario reforzar el módulo de devoluciones (**RF3**). Esto permitirá asegurar que cada devolución actualice correctamente el estado del libro a **"disponible"**, evitando errores de estado que afecten la operación de la biblioteca.
+
+---
+
+# 3. Tareas Clave
+
+## Validación Correctiva (RF2)
+- Implementar una validación que impida registrar un préstamo si el libro no está en estado **"disponible"**.
+- Incluir mensajes de error claros cuando la solicitud sea rechazada por falta de disponibilidad.
+- Garantizar que el sistema registre el intento fallido si es necesario para auditoría.
+
+## Fortalecimiento Preventivo (RF3)
+- Revisar y actualizar la función de devolución para asegurar que el estado del libro cambie siempre a **"disponible"**.
+- Identificar y manejar casos límite como devoluciones duplicadas o libros ya disponibles.
+- Implementar registros de auditoría para verificar cada cambio de estado.
+
+---
