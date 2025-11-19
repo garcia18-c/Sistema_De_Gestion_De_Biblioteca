@@ -1,15 +1,15 @@
 # 1. Tipo de Mantenimiento Propuesto
-**Correctivo y Preventivo**
+**Corregible y Precautoria**
 
 ---
 
 # 2. Justificación
 
-## Mantenimiento Correctivo
-Se debe corregir una falla lógica en el proceso de gestión de préstamos (**RF2**). Actualmente, el sistema permite registrar un préstamo incluso cuando el libro ya está en estado **"prestado"**, generando inconsistencias en la base de datos y riesgos operativos.
+## Mantenimiento Corregible
+Se debe corregir una falla lógica en el proceso de gestión de préstamos. Actualmente, el sistema permite registrar un préstamo incluso cuando el libro ya está en estado **"prestado"**, generando inconsistencias en la base de datos y riesgos operativos.
 
-## Mantenimiento Preventivo
-Para mejorar la estabilidad del sistema y evitar futuros errores, es necesario reforzar el módulo de devoluciones (**RF3**). Esto permitirá asegurar que cada devolución actualice correctamente el estado del libro a **"disponible"**, evitando errores de estado que afecten la operación de la biblioteca.
+## Mantenimiento Precautoria
+Para mejorar la estabilidad del sistema y evitar futuros errores, es necesario reforzar el módulo de devoluciones. Esto permitirá asegurar que cada devolución actualice correctamente el estado del libro a **"disponible"**, evitando errores de estado que afecten la operación de la biblioteca.
 
 ---
 
