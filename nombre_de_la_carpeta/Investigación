@@ -1,0 +1,56 @@
+# 1. Investigación: Uso de Markdown en Proyectos de Software
+
+## 1.1. ¿Qué es Markdown y por qué se utiliza?
+
+* **1.1. Definición:** Markdown es un **lenguaje de marcado ligero** que permite escribir texto con formato (títulos, listas, negrita) utilizando una sintaxis simple basada en texto plano. Fue creado para que los documentos fueran **fáciles de leer y escribir** en su forma sin procesar, pero fáciles de convertir a HTML.
+
+* **1.2. Usos en Software:** Se utiliza en proyectos de software por varias razones clave:
+    * **Legibilidad:** Permite documentar de forma clara y rápida sin depender de editores complejos.
+    * **Portabilidad:** Es compatible con muchas plataformas como GitHub, GitLab y Bitbucket.
+    * **Estandarización:** Es el formato universal para documentación técnica, notas de desarrollo y archivos `README`.
+    * **Control de Versiones:** Su naturaleza de texto plano lo hace ideal para sistemas como Git.
+
+Sintaxis Básica y Ejemplo Práctico
+
+La siguiente tabla resume la sintaxis esencial de Markdown.
+
+| Elemento | Sintaxis Markdown | Resultado Renderizado |
+| :--- | :--- | :--- |
+| **Encabezado 1** | `# Título Principal` | **H1** |
+| **Encabezado 2** | `## Subtítulo` | **H2** |
+| **Párrafo** | `Este es un texto normal.` | *Texto normal* |
+| **Negritas** | `**Texto Importante**` | **Texto Importante** |
+| **Cursivas** | `*Énfasis*` | *Énfasis* |
+| **Línea Horizontal** | `---` | ***Separador*** |
+| **Lista No Ordenada** | `* Ítem A` | * Ítem A |
+| **Lista Ordenada** | `1. Primer Ítem` | 1. Primer Ítem |
+| **Enlace** | `[Texto del Enlace](https://www.markdownguide.org/)` | [Documentación Oficial de Markdown] |
+| **Imagen** | `![Alt Text](https://mdg.imgix.net/assets/images/vscode.png)` | *Imagen incrustada sobre Markdown* |
+
+## 3. Ventajas de utilizar Markdown en combinación con GitHub.
+## 📌 Resumen de Ventajas
+
+| Ventaja | Descripción |
+|--------|-------------|
+| Simplicidad | Fácil lectura y escritura |
+| Control de versiones | Ideal para Git |
+| Colaboración | Perfecto para trabajo en equipo |
+| Compatibilidad | Permite imágenes, tablas y código |
+| Profesional | Estándar en repositorios modernos |
+## Estándar para proyectos de software  
+Markdown es ampliamente utilizado en la industria y es el formato principal en repositorios.  
+Permite documentar:
+
+- Requerimientos  
+- Guías de instalación  
+- Manuales técnicos  
+- Especificaciones de API  
+- Notas de versión  
+## Compatible con enlaces, imágenes, tablas y código  
+Markdown permite integrar fácilmente:
+- Fragmentos de código  
+- Imágenes  
+- Tablas  
+- Enlaces internos y externos  
+- Diagramas  
+Ideal para documentación técnica completa.
