@@ -2,29 +2,56 @@
 
 ## 1.1. ¿Qué es Markdown y por qué se utiliza?
 
-* **1.1.1. Definición:** Markdown es un **lenguaje de marcado ligero** (LML) que permite escribir texto con formato (títulos, listas, negrita) utilizando una sintaxis simple basada en texto plano. Fue creado para que los documentos fueran **fáciles de leer y escribir** en su forma sin procesar, pero fáciles de convertir a HTML.
+### 1.1.1. Definición
+Markdown es un **lenguaje de marcado ligero (LML)** diseñado para permitir escribir texto con formato utilizando una sintaxis simple, legible y basada en texto plano.  
+Su objetivo es que el contenido sea:
 
-* **1.1.2. Usos en Software:** Se utiliza en proyectos de software por varias razones clave:
-    * **Legibilidad:** Permite documentar de forma clara y rápida sin depender de editores complejos.
-    * **Portabilidad:** Es compatible con muchas plataformas como GitHub, GitLab y Bitbucket.
-    * **Estandarización:** Es el formato universal para documentación técnica, notas de desarrollo y archivos `README`.
-    * **Control de Versiones:** Su naturaleza de texto plano lo hace ideal para sistemas como Git.
+- Fácil de leer incluso sin ser procesado.
+- Fácil de convertir a HTML u otros formatos.
+- Ideal para documentación técnica.
+
+### 1.1.2. Usos en el Desarrollo de Software
+Markdown es ampliamente utilizado en proyectos de software por las siguientes razones:
+
+- **Legibilidad:** Permite crear documentación clara sin herramientas complejas.
+- **Portabilidad:** Funciona en plataformas como GitHub, GitLab, Bitbucket, VSCode, etc.
+- **Estandarización:** Es el formato universal para `README.md`, manuales, especificaciones y documentación técnica.
+- **Control de Versiones:** Al ser texto plano, facilita el seguimiento de cambios en Git.
+
+---
 
 ## 1.2. Ejemplo Práctico de Uso de Markdown
 
-El siguiente código muestra la sintaxis básica para los elementos de formato:
+La siguiente tabla muestra la sintaxis básica para los elementos más utilizados:
 
 | Elemento | Sintaxis Markdown |
 | :--- | :--- |
 | **Encabezado** | `# Título Principal (H1)` |
-| **Lista Viñeta** | `- Elemento uno` |
-| **Lista Numerada** | `1. Primer paso` |
+| **Lista con Viñetas** | `- Elemento uno` |
+| **Lista Numerada** | `1. Paso uno` |
 | **Tabla** | `| Producto | Precio |` |
-| **Enlace** | `[Texto visible](https://github.com)` |
-| **Imagen** | `![Texto alternativo](URL_de_la_imagen)` |
+| **Enlace** | `[Visitar GitHub](https://github.com)` |
+| **Imagen** | `![Descripción](https://assets.bytebytego.com/diagrams/0204-git-vs-github.png)` |
+| **Código en línea** | `` `ejemplo` `` |
+| **Bloque de código** | ``` ```python <br>print("Hola") <br>``` |
 
-## 1.3. Ventajas de utilizar Markdown en combinación con GitHub
+---
 
-1.  **Renderizado Automático:** GitHub renderiza automáticamente el archivo `README.md` y otros archivos Markdown, convirtiéndolos en la página principal o la documentación estructurada del repositorio.
-2.  **Claridad en Diffs (Historial de Cambios):** El texto plano permite a Git mostrar las **diferencias exactas** (*diffs*) entre una versión y otra (por ejemplo, entre `DRS_v1` y `DRS_v2`), facilitando la revisión del historial de cambios de la documentación técnica.
-3.  **Colaboración Sencilla:** Los archivos ligeros y de texto plano reducen los conflictos de fusión (*merge conflicts*) cuando varios desarrolladores editan la documentación simultáneamente, mejorando la colaboración.
+## 1.3. Ventajas de Utilizar Markdown en Combinación con GitHub
+
+1. **Renderizado Automático**  
+   GitHub interpreta y transforma automáticamente los archivos `.md`, mostrando contenido con formato profesional sin necesidad de herramientas externas.
+
+2. **Historial de Cambios Claro (Diffs)**  
+   Al ser texto plano, Git puede mostrar con precisión las diferencias entre versiones, facilitando revisiones entre documentos como `DRS_v1`, `DRS_v2` o cualquier archivo técnico.
+
+3. **Colaboración y Mantenimiento Eficiente**  
+   Los archivos Markdown generan menos conflictos de fusión, permiten revisiones más rápidas y son ligeros, lo que mejora el trabajo colaborativo dentro del repositorio.
+
+4. **Integración con el Ecosistema GitHub**  
+   GitHub permite agregar Markdown en:
+   - Issues
+   - Pull Requests
+   - Wikis
+   - Documentación interna  
+   Esto unifica toda la documentación bajo un mismo formato estándar.
